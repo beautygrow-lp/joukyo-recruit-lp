@@ -24,10 +24,10 @@ images/       ogp.png(1200×630) を置く ※未作成
 `utm_content` の値で、冒頭の一言（オレンジの帯）とリード文が変わる。文言は index.html の `VARIANTS` で直す。
 
 ```
-(1) 2年生・未内定    https://kakiuchi-ops.github.io/joukyo-recruit-lp/?utm_source=aigeo&utm_medium=paid&utm_campaign=joukyo2611&utm_content=c1
-(2) 1年生・早期      https://kakiuchi-ops.github.io/joukyo-recruit-lp/?utm_source=aigeo&utm_medium=paid&utm_campaign=joukyo2611&utm_content=c2
-(3) 第2新卒          https://kakiuchi-ops.github.io/joukyo-recruit-lp/?utm_source=aigeo&utm_medium=paid&utm_campaign=joukyo2611&utm_content=c3
-インスタのプロフィール https://kakiuchi-ops.github.io/joukyo-recruit-lp/?utm_source=instagram&utm_medium=organic&utm_campaign=joukyo2611
+(1) 2年生・未内定    https://beautygrow-lp.github.io/joukyo-recruit-lp/?utm_source=aigeo&utm_medium=paid&utm_campaign=joukyo2611&utm_content=c1
+(2) 1年生・早期      https://beautygrow-lp.github.io/joukyo-recruit-lp/?utm_source=aigeo&utm_medium=paid&utm_campaign=joukyo2611&utm_content=c2
+(3) 第2新卒          https://beautygrow-lp.github.io/joukyo-recruit-lp/?utm_source=aigeo&utm_medium=paid&utm_campaign=joukyo2611&utm_content=c3
+インスタのプロフィール https://beautygrow-lp.github.io/joukyo-recruit-lp/?utm_source=instagram&utm_medium=organic&utm_campaign=joukyo2611
 ```
 
 - `utm_content` がない・違う値のときは、共通の文言（「地方の美容学生・若手美容師のみなさんへ」）が出る
@@ -48,7 +48,7 @@ images/       ogp.png(1200×630) を置く ※未作成
 | 【AdInteの計測タグ】【AdInteの計測タグ（CV用）】 | index.html・thanks.html | AdInte の担当者 |
 | 【および株式会社AdInteの計測タグ（設置する場合）】 | privacy.html | タグを置くなら【】だけ外す。置かないなら文ごと削除 |
 | 【GASのURL】 | index.html の CONFIG | 手順4で発行 |
-| 【公開URL】（og:url・og:image） | index.html | `https://kakiuchi-ops.github.io/joukyo-recruit-lp` |
+| 【公開URL】（og:url・og:image） | index.html | `https://beautygrow-lp.github.io/joukyo-recruit-lp` |
 | 【問い合わせ先メールアドレス】 | privacy.html・gas/Code.gs | 採用担当 |
 | 【会社所在地】【制定日】 | privacy.html | 総務（正式版に差し替えるなら不要） |
 
@@ -102,7 +102,7 @@ git status
 ```
 git commit -m "Add joukyo recruit LP"
 git branch -M main
-git remote add origin https://github.com/kakiuchi-ops/joukyo-recruit-lp.git
+git remote add origin https://github.com/beautygrow-lp/joukyo-recruit-lp.git
 git push -u origin main
 ```
 

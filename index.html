@@ -21,8 +21,8 @@
 <meta property="og:site_name" content="株式会社Beauty Grow 採用">
 <meta property="og:title" content="東京で美容師になる。上京サポートあり｜Beauty Grow">
 <meta property="og:description" content="引越し代5万円・家賃月4万円を会社が負担（1年半）。まずはオンラインで話を聞くだけでもOK。">
-<meta property="og:url" content="【公開URL】/">
-<meta property="og:image" content="【公開URL】/images/ogp.png">
+<meta property="og:url" content="https://beautygrow-lp.github.io/joukyo-recruit-lp/">
+<meta property="og:image" content="https://beautygrow-lp.github.io/joukyo-recruit-lp/images/ogp.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ja_JP">
@@ -643,7 +643,7 @@
   var CONFIG = {
     testMode: window.LP_TEST_MODE === true, // switch at the top of <head>
     // GAS web app URL: https://script.google.com/macros/s/xxxx/exec
-    endpoint: '【GASのURL】',
+    endpoint: 'https://script.google.com/macros/s/AKfycbzLZxSZmHvHO3pX8-SWRbMg99zCUM4t5_xw6CA_K43ZjFq7cgk1pYIMHVdf55aEpeYuqg/exec',
     thanksUrl: 'thanks.html'
   };
 
@@ -678,6 +678,8 @@
     document.getElementById('test-banner').hidden = false;
     form.elements.test.value = '1';
   }
+  // ?test=1 on the live page: entry is recorded as test, no banner
+  if (/[?&]test=1(&|$)/.test(location.search)) form.elements.test.value = '1';
   var btn = document.getElementById('submit-btn');
   var msg = document.getElementById('form-msg');
   var sticky = document.getElementById('sticky-cta');
